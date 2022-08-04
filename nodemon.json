@@ -1,0 +1,4 @@
+{
+    "watch": ["./src/electron/main.js"],
+    "ext": "js"
+}
