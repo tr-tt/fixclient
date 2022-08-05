@@ -1,0 +1,46 @@
+*
+{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body,
+html
+{
+    margin: 0;
+    padding: 0;
+    font: caption;
+    height: 100vh;
+    width: 100vw;
+}
+
+:root
+{
+    /* palette */
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+    --color_1: 52, 52, 52;
+    --color_2: 44, 44, 44;
+    --color_3: 0, 255, 0;
+    --color_4: 221, 72, 20;
+    --color_5: 196, 196, 196;
+    --color_6: 119, 33, 111;
+    --color_7: 94, 39, 80;
+    --color_8: 72, 72, 72;
+    --color_9: 255, 0, 0;
+
+    /* sizes */
+    --size_5: 5px;
+    --size_10: 10px;
+    --size_15: 15px;
+    --size_20: 20px;
+    --size_25: 25px;
+    --size_30: 30px;
+    --size_35: 35px;
+    --size_40: 40px;
+    --size_50: 50px;
+    --size_100: 100px;
+
+    /* font weights */
+    --weight_600: 600;
+}

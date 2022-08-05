@@ -1,4 +1,4 @@
 {
-    "watch": ["./src/electron/main.js"],
+    "watch": ["./src/electron/main.js", "./src/electron/appPreload.js", "./src/electron/logPreload.js"],
     "ext": "js"
 }

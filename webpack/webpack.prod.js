@@ -10,6 +10,11 @@ module.exports = merge(
 
         devtool: false,
 
+        output:
+        {
+            publicPath: '.', // in generated html path will start with . like <script defer="defer" src="./bundles/app.js"></script>
+        },
+
         plugins: [
             new miniCssExtractPlugin(
             {

@@ -21,8 +21,8 @@ module.exports =
     output:
     {
         filename: 'bundles/[name].js',
-        path: path.resolve('_build'),
-        publicPath: '.', // in generated html path will start with . like <script defer="defer" src="./bundles/app.js"></script>
+        path: path.join(rootPath, '_build'),
+        publicPath: '/',
     },
 
     target: 'web',
@@ -44,5 +44,16 @@ module.exports =
             template: path.join(rootPath, 'src', 'frontend', 'pages', 'log', 'log.html'),
             chunks: ['log']
         }),
-    ]
+    ],
+
+    module:
+    {
+        rules:
+        [
+            {
+                test: /\.(svg)$/,
+                type: 'asset/source'
+            }
+        ]
+    }
 }
